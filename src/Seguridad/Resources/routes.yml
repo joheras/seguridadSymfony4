@@ -5,6 +5,9 @@
 people_login:
     path: /people/login
     controller: App\Seguridad\Application\Controller\SeguridadController:loginPersona
+    
+people_logout:
+    path: /people/logout
 
 comments:
     path: /people/comments

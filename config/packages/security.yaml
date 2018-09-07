@@ -45,6 +45,9 @@ security:
             form_login: 
                 login_path: people_login
                 check_path: people_login
+            logout:
+                path: people_logout
+                target: /
 
             # activate different ways to authenticate
 
@@ -59,6 +62,7 @@ security:
     access_control:
         # - { path: ^/admin, roles: ROLE_ADMIN }
         - { path: ^/people/comments, roles: ROLE_PEOPLE }
+        - { path: ^/people/comment, roles: ROLE_PEOPLE }
         - { path: ^/usuarios/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/usuarios, roles: ROLE_USER }
         - { path: ^/admin, roles: ROLE_ADMIN }
