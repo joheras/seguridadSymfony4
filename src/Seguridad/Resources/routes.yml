@@ -1,0 +1,30 @@
+## YAML Template.
+
+
+
+people_login:
+    path: /people/login
+    controller: App\Seguridad\Application\Controller\SeguridadController:loginPersona
+
+comments:
+    path: /people/comments
+    controller: App\Seguridad\Application\Controller\SeguridadController:comments
+
+
+comment:
+    path: /people/comment/{id}
+    controller: App\Seguridad\Application\Controller\SeguridadController:comment
+
+
+admin:
+    path: /admin
+    controller: App\Seguridad\Application\Controller\SeguridadController:admin
+    
+usuario_login:
+    path: /usuarios/login
+    controller: App\Seguridad\Application\Controller\SeguridadController:login 
+
+usuarios:
+    path: /usuarios
+    controller: App\Seguridad\Application\Controller\SeguridadController:usuario
+    

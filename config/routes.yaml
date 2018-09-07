@@ -1,0 +1,8 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+seguridad:
+    resource: '../src/Seguridad/Resources/routes.yml'
+
+    

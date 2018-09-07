@@ -1,0 +1,10 @@
+## YAML Template.
+services:
+    App\Seguridad\Infrastructure\Repository\InMemoryPersonRepository: ~
+    App\Seguridad\Domain\Repository\IPersonRepository:
+        '@App\Seguridad\Infrastructure\Repository\InMemoryPersonRepository'
+        
+        
+    App\Seguridad\Infrastructure\Repository\InMemoryCommentRepository: ~
+    App\Seguridad\Domain\Repository\ICommentRepository:
+        '@App\Seguridad\Infrastructure\Repository\InMemoryCommentRepository'

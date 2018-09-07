@@ -1,0 +1,5 @@
+twig:
+    paths: 
+        'src/Seguridad/Resources/views': 'seguridad'
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'
